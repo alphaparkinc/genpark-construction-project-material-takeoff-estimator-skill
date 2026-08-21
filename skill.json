@@ -1,0 +1,38 @@
+{
+  "name": "genpark-construction-project-material-takeoff-estimator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - AI construction project material takeoff estimator: parses architectural plans and generates color-coded quantity reports with cost summaries.",
+  "author": "genpark",
+  "category": "construction",
+  "tags": [
+    "material-takeoff",
+    "construction-ai",
+    "cost-estimation",
+    "project-management",
+    "handoff"
+  ],
+  "inputs": {
+    "project_description": {
+      "type": "string"
+    },
+    "floor_area_sqft": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "material_quantities": {
+      "type": "array"
+    },
+    "total_material_cost_usd": {
+      "type": "number"
+    },
+    "labor_estimate_hours": {
+      "type": "number"
+    },
+    "bid_summary": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
